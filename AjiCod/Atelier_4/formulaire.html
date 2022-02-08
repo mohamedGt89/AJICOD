@@ -1,0 +1,587 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>les formulaire</title>
+  </head>
+  <body>
+    <!--La structure d’un Formulaire-->
+    <h1>La structure d’un Formulaire</h1>
+    <p>
+      Agadir (en berbère : ⴰⴳⴰⴷⵉⵔ ; en arabe : أݣادير ou اگادير ou أكادير ou
+      أغادير (est une ville berbérophone dans le sud-ouest marocain, située sur
+      la côte atlantique, dans la région du Sus, à 508 km au sud de Casablanca
+    </p>
+    <form>
+      à 173 km d'Essaouira et à 235 km à l'ouest de Marrakech6. Agadir est le
+      chef-lieu de la région administrative Souss-Massa et de la préfecture
+      d'Agadir Ida-U-Tanan.
+    </form>
+    <p>
+      D'après le recensement de 2014, Agadir comptait cette année-là 421 844
+      habitants7,
+    </p>
+    <!--Ligne de séparation horizontale-->
+    <hr />
+    <h1>Les libellés:</h1>
+    <form method="post" action="traitement.php">
+      <p>
+        <label for="pseudo">Votre pseudo</label>:<input
+          type="texte"
+          name="pseudo"
+          id="pseudo"
+        />
+      </p>
+    </form>
+    <hr />
+    <h1>la structure d'un formulaire</h1>
+    <form method="post" action="traitement.php">
+      <p>
+        <label for="monoligne"> La zone de texte monoligne</label><br />
+        <input type="texte" name="pseudo" />
+      </p>
+      <p>
+        <label for="multiligne">La zone de texte multiligne</label><br />
+        <textarea name="ameliorer2" id="ameliorer2" rows="10" cols="50">
+Améliorer ton site ?!
+                            Mais enfin ! Il est tellement génialissime qu'il n'est pas nécessaire 
+                           de l'améliorer</textarea
+        >
+      </p>
+    </form>
+    <hr />
+    <h1>La structure un Formulaire :</h1>
+    <form method="post" action="traitement.php">
+      <p>
+        <label for="name">your name</label>
+        <input
+          type="text"
+          name="nom"
+          id="nom"
+          placeholder="ben-fadel"
+          size="30"
+          maxlength="10"
+        />
+        <label for="surname">your surname</label>
+        <input
+          type="texte"
+          name="surname"
+          id="surname"
+          size="20"
+          value="walid"
+          maxlength="5"
+        />
+      </p>
+    </form>
+    <hr />
+    <h1>password</h1>
+    <form method="post" action="traitement.php">
+      <p>
+        <label for="pseudo">your pseudo</label>
+        <input type="text" name="pseudo" id="pseudo" />
+      </p>
+      <p>
+        <label for="pass">your password</label>
+        <input type="password" name="pass" id="pass" />
+      </p>
+    </form>
+    <hr />
+    <h1>Les zones de saisie enrichies</h1>
+    <form method="post" action="traitement.php">
+      <p>
+        <label for="email">e-mail:</label>
+        <input type="email" />
+      </p>
+      <p>
+        <label for="url">url(http://...)</label>
+        <input type="url" />
+      </p>
+      <p>
+        <label for="tel" aria-placeholder="=212 06 77 43 83 17">tel:</label>
+        <input type="tel" />
+      </p>
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="number" />
+      </p>
+      <p>
+        <label for="range">un curseur</label>
+        <input type="range" />
+      </p>
+      <p>
+        <label for="color">color:</label>
+        <input type="color" />
+      </p>
+      <p>
+        <label for="search">search</label>
+        <input type="search" />
+      </p>
+      <p>
+        <label for="date">date</label>
+        <input type="date" />
+      </p>
+      <p>
+        <label for="time">time</label>
+        <input type="time" />
+      </p>
+      <p>
+        <label for="week">week</label>
+        <input type="week" />
+      </p>
+      <p>
+        <label for="month">month</label>
+        <input type="month" />
+      </p>
+      <p>
+        <label for="datetime">date and time</label>
+        <input type="datetime" />
+      </p>
+      <p>
+        <label for="datetime-local">date and time local</label>
+        <input type="datetime-local" />
+      </p>
+    </form>
+    <hr />
+    <h1>Option areas</h1>
+    <from method="post" action="traitement.php">
+      <p>
+        type your favourite food:<br />
+        <input type="checkbox" name="frites" id="frites" />
+        <label for="frites">frites</label><br />
+        <input type="checkbox" name="steak" id="steak" />
+        <label for="steak">steak</label><br />
+        <input type="checkbox" name="epinards" id="epinards" />
+        <label for="epinards">epinards</label><br />
+        <input type="checkbox" name="huitres" id="huitres" />
+        <label for="huitres">huitres</label>
+      </p>
+    </from>
+    <hr />
+    <h1>drop-down lists</h1>
+    <form method="post" action="traitement.php">
+      <p>
+        Please indicate your age<br />
+        <input type="radio" name="age" value="moins15" id="moins15" />
+        <label for="moins 15">moins de 15 ans</label><br />
+        <input type="radio" name="age" value="medieum15-25" id="medium15-25" />
+        <label for="medium15-25">15-25ans</label><br />
+        <input type="radio" name="age" value="medium25-40" id="25-40" />
+        <label for="medium25-40">25-40ans</label><br />
+        <input type="radio" name="age" value="plus40" id="plus40" />
+        <label for="plus40">more than 40ans</label>
+      </p>
+      <hr />
+      <h1>Checkboxes</h1>
+
+      <p>
+        Please indicate your age:<br />
+        <input type="radio" name="age" value="moins15" id="moins15" />
+        <label for="moins 15">moins de 15 ans</label><br />
+        <input type="radio" name="age" value="medieum15-25" id="medium15-25" />
+        <label for="medium15-25">15-25ans</label><br />
+        <input type="radio" name="age" value="medium25-40" id="25-40" />
+        <label for="medium25-40">25-40ans</label><br />
+        <input type="radio" name="age" value="plus40" id="plus40" />
+        <label for="plus40">more than 40ans</label>
+      </p>
+      <p>
+        where are u from?<br />
+        <input type="radio" name="continent" value="europe" id="europe" />
+        <label for="europe">europe</label><br />
+        <input type="radio" name="continent" value="afrique" id="afrique" />
+        <label for="afrique">afrique</label><br />
+        <input type="radio" name="continent" value="asie" id="asie" />
+        <label for="asie">asie</label><br />
+        <input type="radio" name="continent" value="amerique" id="amerique" />
+        <label for="amerique">amerique</label><br />
+        <input type="radio" name="australie" value="australie" id="australie" />
+        <label for="australie">australie</label>
+      </p>
+    </form>
+    <hr />
+    <h1>Drop-down lists:</h1>
+    <form method="post" action="traitement.php">
+      <p>
+        <label for="pays">what is your countrie?</label>
+        <br />
+        <select name="pays" id="pays">
+          <option value="frensh">frensh</option>
+          <option value="spain">spain</option>
+          <option value="italy">italy</option>
+          <option value="portugal">portugal</option>
+          <option value="canada">canada</option>
+          <option value="united states">united states</option>
+          <option value="morocco">morocco</option>
+          <option value="japon">japon</option>
+        </select>
+      </p>
+      <hr />
+
+      <p>
+        <label for="pays">what is your countrie?</label>
+        <br />
+        <select name="pays" id="pays">
+          <optgroup label="europe">
+            <option value="frensh">frensh</option>
+            <option value="spain">spain</option>
+            <option value="italy">italy</option>
+            <option value="portugal">china</option>
+          </optgroup>
+          <optgroup label="amerique">
+            <option value="canada">canada</option>
+            <option value="united states">united states</option>
+          </optgroup>
+          <optgroup label="afrique">
+            afrique
+            <option value="maroc">maroc</option>
+            <option value="mazambique">mozambique</option>
+          </optgroup>
+        </select>
+      </p>
+    </form>
+
+    <hr />
+    <h1>Group fields:</h1>
+    <form method="post" action="traitement.php">
+      <fieldset>
+        <legend>Your contact information</legend>
+        <label for="name">what is your name</label>
+        <input type="text" name="name" id="name" />
+        <label for="surname">what is your surname</label>
+        <input type="text" name="surname" id="surname" />
+        <label for="email">what is your email</label>
+        <input type="email" name="email" id="email" />
+      </fieldset>
+      <fieldset>
+        <legend>>Your wish</legend>
+        <p>
+          Make a wish you would like to see fulfilled:
+          <input type="radio" name="wish" value="rish" id="rish" />
+          <label for="riche">being riche</label>
+          <input type="radio" name="wish" value="famous" id="famous" />
+          <label for="famous">being famous</label>
+          <input type="radio" name="wish" value="smart" id="smart" />
+          <label for="smart">being very smart</label>
+          <input type="radio" name="wish" value="else" id="else" />
+          <label for="else">else...</label>
+        </p>
+        <p>
+          <label for="clarifications">say "esle" please specify </label>
+          <textarea
+            name="clarifications"
+            id="clarifications"
+            cols="40"
+            rows="4"
+          ></textarea>
+        </p>
+      </fieldset>
+    </form>
+    <hr />
+    <h1>other tags</h1>
+    <from method="post" action="traitement.php">
+      automaticlly select a field:
+      <input type="text" name="surname" id="surname" autofocus />
+      Rendre un champ obligatoire :
+      <input type="text" name="surname" id="surname" required />
+      <hr />
+      <h1>buttons</h1>
+      <input type="sumbit" value="send" />
+      <input type="reset" value="reset" />
+    </from>
+    <hr />
+    <h1>exercise 1</h1>
+    <form method="post" action="traitement.php">
+      <table>
+        <tr>
+          <th>field 1</th>
+          <th>field 2</th>
+          <th>field 3</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="text" id="text" placeholder="text 1" />
+          </td>
+          <td>
+            <input type="text" name="text" id="text" placeholder="text 2" />
+          </td>
+          <td>
+            <input type="text" name="text" id="text" placeholder="text 3" />
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>field 4</th>
+          <th colspan="2">field 5</th>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="text 3"
+              size="46"
+            />
+          </td>
+          <td colspan="2">
+            <input type="text" name="text" id="text" placeholder="text 4" />
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>field 6</th>
+        </tr>
+        <tr>
+          <td>
+            <textarea
+              name="text"
+              id="text"
+              placeholder="text area"
+              cols="71"
+              rows="4"
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <hr />
+    <h1>exercise 2</h1>
+    <form method="post" action="traitement.php">
+      <fieldset>
+        <legend>declared_performances</legend>
+        <fieldset>
+          <legend>essential_characterestic</legend>
+          <input
+            type="search"
+            name="thermal properties"
+            id="thermal properties"
+            placeholder="thermal properties"
+            size="60"
+          />
+          <fieldset>
+            <legend>Requirement_clauses</legend>
+            <fieldset>
+              <legend>Requirement_clause</legend>
+              <label for="name">name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="thermal transmitance"
+              /><br />
+              <label for="value">value:</label>
+              <input
+                type="text"
+                name="value"
+                id="value"
+                placeholder="0.7"
+              /><br />
+              <label for="unit">unit:</label>
+              <input
+                type="text"
+                name="unit"
+                id="unit"
+                placeholder="W/m2K"
+              /><br />
+              <label for="referenced_norm">referenced_norm</label>
+              <input
+                type="text"
+                name="referenced_norm"
+                id="referenced_norm"
+                placeholder="EN 10077-2"
+              />
+            </fieldset>
+            <fieldset>
+              <legend>Requirement_clause</legend>
+              <label for="name">name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="g value"
+              /><br />
+              <label for="value">value</label>
+              <input
+                type="text"
+                name="value"
+                id="value"
+                placeholder="0.53"
+              /><br />
+              <label for="unit">unit</label>
+              <input type="text" name="unit" id="unit" placeholder="-" /><br />
+              <label for="referenced_norm">referenced_norm</label>
+              <input
+                type="text"
+                name="referenced_norm"
+                id="referenced_norm"
+                placeholder="EN 14351-1"
+              />
+            </fieldset>
+          </fieldset>
+        </fieldset>
+      </fieldset>
+    </form>
+    <hr />
+    <form method="post" action="traitement.php">
+      <fieldset>
+        <legend>text input</legend>
+        <p>
+          <label for="text box">text box</label>
+          <input
+            type="text"
+            name="text box"
+            id="text box"
+            value="text box"
+          /><br />
+        </p>
+        <p>
+          <label for="password">password</label>
+          <input type="password" name="pass" id="pass" value="kkkkkk" /><br />
+        </p>
+        <p>
+          <label for="text area">Text area</label>
+          <textarea
+            name="text area"
+            id="text area"
+            placeholder="your text here"
+            cols="57"
+            rows="4"
+          ></textarea>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>selecting elements</legend>
+        <p>
+          <label for="select list"></label>
+          <select name="lists" id="lists">
+            <option value="one">one</option>
+            <option value="two">two</option>
+            <option value="three">three</option>
+          </select>
+        </p>
+        <p>
+          check boxes
+          <input type="radio" name="green egg" id="green egg" />
+          <label for="green egg">green egg</label>
+          <input type="radio" name="ham" id="ham" />
+          <label for="ham">ham</label><br />
+        </p>
+        <p>
+          radio buttons
+          <input type="radio" name="small" id="small" />
+          <label for="small">small</label>
+          <input type="radio" name="medium" id="medium" />
+          <label for="medium">medium</label>
+          <input type="radio" name="large" id="large" />
+          <label for="large">large</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Buttons</legend>
+        <p>
+          <button>standar button</button>
+          <button>input button</button>
+          <button>reset</button>
+          <button>submit</button>
+        </p>
+      </fieldset>
+    </form>
+    <hr />
+
+    <form method="post" action="traitement.php">
+      <table>
+        <tr>
+          <td><label for="username">username:</label></td>
+          <td><input type="text" name="username" id="username" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">password:</label></td>
+          <td><input type="password" name="pass" id="pass" /></td>
+        </tr>
+        <tr>
+          <td><label for="city of Employment">city of Employment:</label></td>
+          <td>
+            <input
+              type="text"
+              name="city of Employment"
+              id="city of Employment"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="web server">web server:</label></td>
+          <td>
+            <select name="servers" id="servers">
+              <option value="-select a server-">-select a server-</option>
+              <option value="server 1">server 1</option>
+              <option value="server 2">server 2</option>
+              <option value="server 3">server 3</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="4">please specify your role:</td>
+          <td>
+            <input type="radio" name="admin" id="admin" /><label for="admin"
+              >admin</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" name="engeneer" id="engeneer" /><label
+              for="engineer"
+              >engineer</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" name="manager" id="manager" /><label
+              for="manager"
+              >managerr</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" name="guest" id="guest" /><label for="guest"
+              >guest</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td rowspan="4">single sign-on to the foloowing:</td>
+          <td>
+            <input type="checkbox" name="mail" /><label for="mail">mail</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="payroll" /><label for="payroll"
+              >payroll</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="self-service" /><label
+              for="self-service"
+              >self-service</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <th><button>login</button><button>reset</button></th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

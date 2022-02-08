@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>exercise</h1>
+    <form method="post" action="traitement.php">
+      <table>
+        <tr>
+          <td>
+            <label for="name"
+              ><strong>Name</strong><br /><em>add your name</em></label
+            >
+          </td>
+          <td><input type="text" name="name" id="name" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email"
+              ><strong>Email</strong><br /><em>enter a valid email</em></label
+            >
+          </td>
+          <td><input type="text" name="email" id="email" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phone"
+              ><strong>phone</strong><br /><em>add a number phone</em></label
+            >
+          </td>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="site web"
+              ><strong>website</strong><br /><em>your website</em></label
+            >
+          </td>
+          <td><input type="text" name="text" id="text" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="periority"
+              ><strong>periority</strong><br /><em>priority level</em></label
+            >
+          </td>
+          <td>
+            <select name="priority" id="priority">
+              <option value="weak">weak</option>
+              <option value="medium">medium</option>
+              <option value="high">high</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="type"
+              ><strong>Type</strong><br /><em>Type of contact</em></label
+            >
+          </td>
+          <td>
+            <select name="type" id="tyoe">
+              <option value="site update">site update</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="messsage"
+              ><strong>Message</strong><br /><em>Type your message</em></label
+            >
+          </td>
+          <td>
+            <textarea name="message" id="message" rows="8" cols="30"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2" align="center"><button>submit</button></th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

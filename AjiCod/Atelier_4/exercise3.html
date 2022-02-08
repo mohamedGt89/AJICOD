@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>exercise 3</h1>
+    <form method="post" action="traitement.php">
+      <fieldset>
+        <legend>identification</legend>
+        <p>
+          <label for="identifiant">identifiant</label>
+          <input
+            type="text"
+            name="identifiant"
+            id="identifiant"
+            autofocus
+          /><br />
+        </p>
+        <p>
+          <label for="password">password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="5"
+            maxlength="9"
+          />
+        </p>
+      </fieldset>
+    </form>
+    <hr />
+    <form method="post" action="traitement.php">
+      <fieldset>
+        <legend>fils transfer</legend>
+        <p>
+          <label for="myfils">select fils</label>
+          <input type="file" name="myfils" id="myfils" /><br />
+        </p>
+        <p>to send: <button>validate</button></p>
+      </fieldset>
+    </form>
+    <hr />
+    <form method="post" action="traitement.php">
+      <fieldset>
+        <legend>select a color</legend>
+        <p>
+          <label for="color">select a color</label>
+          <input type="color" name="color" id="color" />
+        </p>
+        <p>
+          <label for="search">search</label>
+          <input type="search" name="search" id="search" />
+        </p>
+        <p>
+          to send:
+          <button>validate</button>
+        </p>
+      </fieldset>
+    </form>
+    <hr />
+    <form method="post" action="traitement.php">
+      <fieldset>
+        <legend>select a number</legend>
+        <p>
+          <label for="number">number:</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            minlength="-20"
+            maxlength="50"
+          />
+        </p>
+        <p>
+          <label for="range">range</label>
+          <input type="range" />
+        </p>
+        <p>
+          to send:
+          <button>validate</button>
+        </p>
+      </fieldset>
+    </form>
+    <hr />
+    <form method="post" action="traitement.php">
+      <fieldset>
+        <legend>other information</legend>
+        <p><label for="email">email</label> <input type="email" /></p>
+        <p>
+          <label for="numberphone">number phone</label>
+          <input type="tel" name="numberphone" id="numberphone" />
+        </p>
+        <p>
+          <label for="website">website</label>
+          <input type="url" />
+        </p>
+      </fieldset>
+    </form>
+    <hr />
+    <audio controls>
+      <source
+        src="../Atelier_5/audios and videos/Inkonnu - BREDA ( OFFICIAL MUSIC VIDEO) prod by Orpheus.mp3"
+      />
+    </audio>
+  </body>
+</html>
